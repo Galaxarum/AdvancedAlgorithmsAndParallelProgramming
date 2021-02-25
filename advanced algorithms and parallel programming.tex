@@ -1,0 +1,231 @@
+\documentclass{article}
+\usepackage{algorithm,algorithmic}
+\usepackage{mathtools}
+\usepackage{qtree}
+\usepackage{hyperref, titlesec}
+
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\newcommand{\sectionbreak}{\clearpage}
+
+\author{Matteo Secco}
+\title{Advanced Algorithms and Parallel Programming}
+
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Algorithm recap}
+\paragraph{Algorithm} any well defined computational procedure that takes some values as input, and produces some values as output. It must terinate in a finite number of steps
+\paragraph{Algorithm analysis} Theoretical study of computer-program performance and resource usage
+Performance is not the only thing that matters. For example
+\begin{itemize}
+\item modularity
+\item maintainability
+\item user-friendlyness
+\end{itemize}
+are some important aspects as well
+\paragraph{Why do we study algorithms and performance?} 
+\begin{itemize}
+\item to better understand scalability
+\item to understand what is feasible and what is not
+\item to have a formal language to talk about a program behaviour
+\end{itemize}
+\begin{algorithm}
+\caption{Insertion sort}
+\begin{algorithmic}
+\REQUIRE $A,n$
+\REQUIRE $len(A)=n$
+\ENSURE $A$ is sorted
+\FOR{$j\leftarrow 2$ \textbf{to} $j \leq n$}
+	\STATE $key \leftarrow A[j]$
+	\STATE $i \leftarrow j-1$
+	\WHILE{$i>0$ \and $A[i]>key$}
+		\STATE $A[i+1] \leftarrow A[i]$
+		\STATE $i \leftarrow i-1$
+	\ENDWHILE
+	\STATE $A[i+1]=key$
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+\paragraph{Obvious observations}
+\begin{itemize}
+\item Running time depends on the input
+\item Running time has to be parametrized on the length of the input
+\item We generally look for upper limits because those are more interesting in real world
+\end{itemize}
+\paragraph{Kind of analysis}
+\begin{description}
+\item[Worst case] $T(n)=$maximum time of the algorithm on any input of size $n$
+\item[Average case] $T(n)=$expected time over all inputs of size $n$. Requires assumption on statistical distribution of the inputs
+\item[Best case] Easy to be cheated with slow algorithms that works very well on \underline{specific} inputs
+\end{description}
+
+\paragraph{Asympthotic Analysis} Ignore machine-dependent constraints and look at the behaviour of $T(n)$ as $n \rightarrow \infty$
+
+\subsection{Asymptotic notations}
+\paragraph{O-notation} provides upper bounds to execution times
+\[
+O(g(n)) = 
+\{ 
+f(n): 
+\quad \exists c>0, n_0>0 :
+0 \leq f(n) \leq c \cdot g(n) 
+\quad \forall n \geq n_0 
+\}
+\]
+\paragraph{$\Omega$-notation} provides lower bounds to execution times
+\[
+\Omega(g(n)) = 
+\{
+f(n):
+\quad \exists c>0, n_0>0 :
+0 \leq c \cdot g(n) \leq f(n)
+\quad \forall n \geq n_0
+\}
+\]
+\paragraph{$\Theta$-notation} provides tight bounds to execution times
+\[\Theta(g(n))=O(g(n)) \cap \Omega(g(n))\]
+
+\paragraph{Merge sort}
+\begin{algorithm}
+\caption{Merge-Sort}
+\begin{algorithmic}
+\REQUIRE $A, n$
+\REQUIRE $len(A)=n$
+\IF{$n=1$}
+	\RETURN $A$
+\ENDIF
+\STATE $L \leftarrow \text{Merge-Sort}\left(A\left[1..\ceil*{\frac{n}{2}}\right]\right)$
+\STATE $R \leftarrow \text{Merge-Sort}\left(A\left[\ceil*{\frac{n}{2}}+1..n\right]\right)$
+\RETURN Merge$(L,R)$
+\end{algorithmic}
+\end{algorithm}
+
+\section{Recurrence analysis}
+\subsection{Recursion tree analysis} applied to merge sort
+\[
+T(n) = \begin{cases}
+\Theta(1)					&	\text{if }n=1\\
+2T\left(\frac{n}{2}\right)+\Theta(n)		&	\text{if }n>1
+\end{cases}
+\]
+\paragraph{Example} $T(n)=2T\left(\frac{n}{2}\right)+cn$\\
+\qtreecenterfalse
+\Tree[.{$T(n)$} ]
+$\rightarrow$
+\Tree [.{$cn$} {$T\left(\frac{n}{2}\right)$} {$T\left(\frac{n}{2}\right)$}  ]
+$\rightarrow$
+\Tree [.{$cn$} 
+		[.{$\frac{cn}{2}$} {$T\left(\frac{n}{4}\right)$} {$T\left(\frac{n}{4}\right)$} ]
+		[.{$\frac{cn}{2}$} {$T\left(\frac{n}{4}\right)$} {$T\left(\frac{n}{4}\right)$} ]
+	]
+$\rightarrow$
+\Tree [.{$cn$}
+		[.{$\frac{cn}{2}$} {$\frac{cn}{4}$} {$\frac{cn}{4}$} ]
+		[.{$\frac{cn}{2}$} {$\frac{cn}{4}$} 
+			\qroof{$\Theta(1)\quad ...\quad\Theta(1)$}.{...}
+		]
+	]\\
+\begin{table}[H]
+\begin{tabular}{l|l|l}
+	\textbf{Recursion conplexity}	&	\textbf{Base case complexity}&	\textbf{Total Complexity}\\
+	\hline
+	$h=\log(n)$ 						& 	\#leaves$=n$					&	\\
+	each level adds up to $cn$		& 	$\Theta(1)$ per leave		&	\\
+	\hline
+	$h\cdot cn=cn\log (n)$			&	$n$							&	$O(n\log (n)$\\
+\end{tabular}
+\end{table}
+
+
+\subsection{Analysis by substitution}
+\begin{description}
+\item[Guess] the form of the solution
+\item[Verify] by induction
+\item[Solve] for constraints
+\end{description}
+
+\paragraph{Example}
+$T(n)=4T\left(\frac{n}{2}\right)+n$	(and $T(1)=\Theta(1)$)\\
+\begin{itemize}
+\item Guess $T(n)=O(n^3)$
+\item Find some $k<n$ such that $T(k)\leq ck^3$
+\item Prove $T(n)\leq cn^3$ by induction
+\end{itemize}
+
+\subsection{Master theorem}
+Applies to recurrencies of the form $T(n)=aT\left(\frac{n}{b}\right)+f(n)$\\ where $a\geq 1, b>1, f>0$ for $n \rightarrow \infty$
+\begin{align*}
+f(n)		&=O	(n^{\log_b a - \epsilon})		&\rightarrow& 	T(n)= \Theta(n^{\log_b a})\\
+f(n)		&=	\Theta(n^{\log_b a}\log^k n)		&\rightarrow& 	T(n)=\Theta(n^{log_b a} \log^{k+1} n)\\
+f(n)		&=	\Omega(n^{\log_b a + \epsilon}) 	&\rightarrow& 	T(n)=\Theta(f(n))
+\end{align*}
+
+\section{Divide and Conquer}
+\begin{description}
+\item[Divide] the problem into subproblems
+\item[Conquer] the subproblems recursively
+\item[Combine] subproblem solutions
+\end{description}
+
+\paragraph{Merge sort}
+\begin{description}
+\item[Divide] split in half
+\item[Conquer] Sort the 2 subarrays
+\item[Combine] Linear-time merge
+\end{description}
+
+\paragraph{Binary search}
+\begin{description}
+\item[Divide] Check middle element
+\item[Conquer] Search 1 subarray
+\item[Combine] Return result up
+\end{description}
+
+\paragraph{Compute $a^n$}
+\[a^n=\begin{cases}
+	a^{n/2} \cdot a^{n/2}					&	\text{if n is even}\\
+	a \cdot a^{(n-1)/2} \cdot a^{(n-1)/2}	&	\text{if n is odd}
+\end{cases}
+\]
+\[T(n)=T\left(\frac{n}{2}\right)+\Theta(1)=\Theta(\log n)\]
+
+
+
+\section{Parallel Random Access Machine}
+\paragraph{RAM:} abstract device having
+\begin{itemize}
+\item Unbounded number of memory cells
+\item Unbounded size for each memory cell
+\item Instruction set including simple operations, data operations, comparations, branches
+\item All operations take unitary time
+\item Time complexity = \# instructions executed
+\item Space complexity = \# memory cells used
+\end{itemize}
+\paragraph{PRAM:} abstract device for designing parallel algorithms. $M'$ is a system $<M,x,y,A>$ of infinitely many
+\begin{itemize}
+\item RAMs $M_i$ called processors. Each is assumed to be itentical to the others and recognize its own index
+\item Input cells $X_i$
+\item Output cells $Y_i$
+\item Shared memory cells $A_i$
+\end{itemize}
+
+\paragraph{Computation step} consists of 5 phases. In parallel, each processor:
+\begin{itemize}
+\item Reads a value from one of $X_i$
+\item Reads a value from one of $A_i$
+\item Performs some internal computation
+\item May write into one of the $Y_i$
+\item May write into one of the $A_i$
+\end{itemize}
+Some peculiarities to highlight:
+\begin{itemize}
+\item Some processors may remain idle
+\item More processor can safely read the same memory cell
+\item When more processor write the same cell at the same time a \textbf{write conflict} occours
+\end{itemize}
+
+\end{document}
