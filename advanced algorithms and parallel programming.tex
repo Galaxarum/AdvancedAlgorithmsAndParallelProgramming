@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{algorithm,algorithmic}
 \usepackage{mathtools}
+
 \usepackage{qtree}
 \usepackage{hyperref, titlesec}
 
@@ -228,4 +229,85 @@ Some peculiarities to highlight:
 \item When more processor write the same cell at the same time a \textbf{write conflict} occours
 \end{itemize}
 
+\subsection{Conflict Management} PRAM are classified based on how they manage conflicts. 
+\begin{description}
+\item[Exclusive Read (ER)] processors can read only from \underline{distinct} memory cells
+\item[Concurrent Read (CR)] processors can simultaneously read from \underline{any} memory cell
+\item[Exclusive Write (EW)] processors can symultaneously write to \underline{distinct} memory cells
+\item[Concurrent Write (CR)] processors can simultaneously read from \underline{any} memory cell
+\end{description}
+Four possible combination may happen, but only three (EREW, CREW, CRCW) are interesting. This is because in  real applications, it is pointless to have read capabilities stricter than write ones.
+\paragraph{Concurrent Writes} allows three models to determine what will be actually written in case of a conflict:
+\begin{description}
+\item[Priority CW] each processor is assigned a (unique) priority. The value from the processor with higher priority  is the one actually written
+\item[Common CW] the write completes $\iff$ all the values to be written are equal
+\item[Arbitrary/Random CW] one randomly chosen processor is allowed to complete the write
+\end{description}
+
+\subsection{Strenghts of PRAM}
+\begin{description}
+\item[Natural:] the number of operations per cycle having $p$ processors is at most $p$
+\item[Strong:] any processor can read/write any shared cell in unit time
+\item[Simple:]  abstracts from communication/synchronization overheads, making it easier to evaluate complexity and correctness
+\item[Can be used as benchmark:] if a problem has no feasible solution in PRAM, it neither has on any parallel machine
+\end{description}
+
+\subsection{Computational power} $A$ is computationally stronger than $B$ $\iff$ any algorithm written for $B$  will run unchanged on $A$ in the same parallel time and with  the same basic properties.
+\[
+\substack{\textit{Most powerful}\\ \textit{Least realistic}}
+\qquad
+\text{Priority}\geq \text{Arbitrary}\geq \text{Common} \geq \text{CREW} \geq \text{EREW}
+\qquad
+\substack{\textit{Least powerful}\\ \textit{Most realistic}}
+\]
+
+\subsection{Definitions}
+\begin{description}
+\item[$T^*(n)$] Time to solve on \underline{one} processor, using the best sequential algorithm
+\item[$T_p(n)$] Time to solve on $p$ processors
+\item[$SU_p(n)=\frac{T^*(n)}{T_p(n)}$] Speedup on $p$ processors
+\item[$E_p(n)=\frac{T_1(n)}{p\cdot T_p(n)}$] Efficiency (time on $1$ / time that could be used on $p$)
+\item[$T_\infty(n)$] Shortest run time for any value of $p$
+\item[$C(n)=P(n)\cdot T(n)$] Cost (in terms of time and processors
+\item[$W(n)$] Work=total \#operations
+\end{description}
+
+\subsection{Amdahl's vs Gustafson's law}
+\subsubsection{Amdahl's law}
+\paragraph{Computation model} consists in interleaved segments. Segments can either be serial (no speedup from parallelization) or parallelizable (allowing for speedup)\\
+\[T_p>\frac{T_1}{P} \implies SU>P\]
+The length of the parallelizable part is a \textbf{fixed} fraction $f$, and the sequential length is $1-f$.
+\[
+SU(P,f)=\frac{T_1}{T_p}
+=\frac{T_1}{\underbrace{T_1\cdot (1-f)}_\text{sequential part}+\underbrace{\frac{T_1\cdot f}{P}}_\text{parallel part}}
+=\frac{1}{(1-f)+\frac{f}{P}}
+\]
+\[\lim_{P\to \infty} SP(P,f) = \frac{1}{1-f}\]
+
+\subsubsection{Gustafson's law}
+\paragraph{Differences in the model}
+\begin{itemize}
+\item $f$ is not fixed
+\item Absolute serial time is fixed
+\item Parallel problem size is increased to exploit more processors
+\item Serial time $s$ is fixed
+\item Parallel time per processor $1-s$ is fixed
+\end{itemize}
+\[SU(P)=\frac{T_1}{T_p}
+=\frac{s+\overbrace{P\cdot (1-s)}^\text{full parallel computation}}{s+\underbrace{(1-s)}_{\substack{\text{parallel computation}\\ \text{on each processor}}}}
+=s+P\cdot (1-s)
+\qquad \implies \textbf{Linear speedup}
+\]
+
+\section{Complexity classes}
+\subsection{P complexity}
+Complexity class P contains decision problems which can be solved by a deterministic Turing machine in polynomial time
+\paragraph{P-complete} A problem is P-complete if it is in P and any problem in P can be reduced to it by an appropriate reduction
+
+\subsection{NC complexity} Nick's Class is the set of problem decidable in polylogarithmic time on a parallel computer with a polynomial number of processors
+\[
+\exists c,k: \: \text{the problem can be solved in time }
+O(log^c n)
+\text{ using } O(n^k) \text{ processors}
+\]
 \end{document}
