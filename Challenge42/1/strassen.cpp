@@ -3,9 +3,10 @@
 //
 #include <iostream>
 #include <benchmark/benchmark.h>
+#include <cmath>
 
 using namespace std;
-#define TEST
+#define TES
 
 typedef vector<vector<int>> matrix;
 typedef vector<int> vec;
@@ -21,25 +22,35 @@ void print(const matrix& A){
     cout << '\n';
 }
 
+vec operator+(const vec &v1, const vec &v2) {
+    const int size = v1.size();
+    vec r = vec(size);
+    for(int i=0;i<size;i++)
+        r[i]=v1[i]+v2[i];
+    return r;
+}
+
+vec operator-(const vec &v1, const vec &v2) {
+    const int size = v1.size();
+    vec r = vec(size);
+    for(int i=0;i<size;i++)
+        r[i]=v1[i]-v2[i];
+    return r;
+}
+
 matrix operator+(const matrix &A, const matrix &B){
     const int size = A.size();
     matrix C(size);
-    for(int r=0;r<A.size();r++){
-        C[r] = vec(size);
-        for(int c=0;c<size;c++)
-            C[r][c]=A[r][c]+B[r][c];
-    }
+    for(int r=0;r<A.size();r++)
+        C[r]=A[r]+B[r];
     return C;
 }
 
 matrix operator-(const matrix &A, const matrix &B){
     const int size = A.size();
     matrix C(size);
-    for(int r=0;r<A.size();r++){
-        C[r] = vec(size);
-        for(int c=0;c<size;c++)
-            C[r][c]=A[r][c]-B[r][c];
-    }
+    for(int r=0;r<A.size();r++)
+        C[r]=A[r]-B[r];
     return C;
 }
 
@@ -47,12 +58,9 @@ submatrices split(const matrix &A){
     const int size = A.size();
     const int newSize = size/2;
     matrix TL(newSize), TR(newSize), BL(newSize), BR(newSize);
-    for(int r=0;r<newSize;r++) {
+    for(int r=0,ra=newSize;r<newSize;r++,ra++) {
         TL[r] = vec(A[r].begin(), A[r].begin() + newSize);
         TR[r] = vec(A[r].begin() + newSize, A[r].end());
-    }
-    for(int r=0;r<newSize;r++){
-        const int ra = r+newSize;
         BL[r] = vec(A[ra].begin(), A[ra].begin() + newSize);
         BR[r] = vec(A[ra].begin() + newSize, A[ra].end());
     }
@@ -63,35 +71,27 @@ submatrices split(const matrix &A){
 }
 
 
-matrix join(matrix  TL,matrix TR,matrix BL,matrix BR){
+matrix join(const matrix& TL,const matrix& TR,const matrix& BL,const matrix& BR){
     const int halfSize = TL.size();
     const int newSize = 2*halfSize;
     matrix A(newSize);
-    for(int r=0;r<halfSize;r++){
-        A[r] = TL[r];
+    for(int r=0,rn=halfSize;r<halfSize;r++,rn++){
+        A[r].reserve(newSize);
+        A[r].insert(A[r].end(),TL[r].begin(),TL[r].end());
         A[r].insert(A[r].end(),TR[r].begin(),TR[r].end());
-    }
-    for(int r=0;r<halfSize;r++){
-        const int rn = r+halfSize;
-        A[rn] = BL[r];
+        A[rn].reserve(newSize);
+        A[rn].insert(A[rn].end(),BL[r].begin(),BL[r].end());
         A[rn].insert(A[rn].end(),BR[r].begin(),BR[r].end());
     }
     return A;
 }
 matrix join(const submatrices& As){
-    matrix  TL=As.first.first,
-            TR=As.first.second,
-            BL=As.second.first,
-            BR=As.second.second;
-    return join(TL,TR,BL,BR);
+    return join(As.first.first, As.first.second, As.second.first, As.second.second);
 }
 
 matrix operator*(const matrix &A, const matrix &B){
-    if(A.size()==1){
-        matrix R(1);
-        R[0] = vec({A[0][0]*B[0][0]});
-        return R;
-    }
+    if(A.size()==1) //
+        return matrix({vec({A[0][0]*B[0][0]})});
     const submatrices As = split(A), Bs = split(B);
     const matrix
         M1 = (As.first.first+As.second.second)*(Bs.first.first+Bs.second.second),
@@ -131,16 +131,21 @@ int main(){
 }
 #else
 
-static void BM_binary_search(benchmark::State& state) {
-    int b = state.range(0);
-    int e = state.range(1);
+static void BM_strassen(benchmark::State& state) {
+    int side = state.range(0);
+    matrix A(side), B(side);
+    for(int r=0; r < side; r++){
+        A[r]=vec(side);
+        B[r]=vec(side);
+    }
     for(auto _: state)
-        power(b,e);
-    state.SetComplexityN(e);
+        A*B;
+    state.SetComplexityN(side);
 }
 
-BENCHMARK(BM_binary_search)
-->Ranges({{1e2,1e8},{1e2,1e8}})->Complexity();
+BENCHMARK(BM_strassen)
+->RangeMultiplier(2)->DenseRange(1,10)->DenseRange(50,200,50)->DenseRange(300,500,100)->DenseRange(1000,3000,1000)
+->Complexity([](benchmark::IterationCount n)->double{return pow(n,log2(7));});
 
 BENCHMARK_MAIN();
 #endif
