@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/CMakeFiles/googletest"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/CMakeFiles/googletest.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/CMakeFiles/googletest-complete.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-install.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-mkdir.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-download.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-update.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-patch.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-configure.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-build.rule"
+		},
+		{
+			"file" : "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/src/googletest-stamp/googletest-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest"
+		],
+		"name" : "googletest"
+	}
+}

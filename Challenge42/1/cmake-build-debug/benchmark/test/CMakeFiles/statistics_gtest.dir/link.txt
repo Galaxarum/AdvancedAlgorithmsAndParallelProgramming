@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra  -std=c++11  -Wall  -Wextra  -Wshadow  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g   CMakeFiles/statistics_gtest.dir/statistics_gtest.cc.o  -o statistics_gtest  ../src/libbenchmark.a ../../lib/libgmock_maind.a -pthread /usr/lib/x86_64-linux-gnu/librt.so ../../lib/libgmockd.a ../../lib/libgtestd.a -pthread 

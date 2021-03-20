@@ -1,0 +1,2322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="benchmark"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\benchmark\;CMake Files\benchmark\cmake\;CMake Files\benchmark\src\;CMake Files\benchmark\googletest\;CMake Files\benchmark\googletest\googlemock\;CMake Files\benchmark\googletest\googlemock\cmake\;CMake Files\benchmark\googletest\googletest\;CMake Files\benchmark\googletest\googletest\cmake\;CMake Files\benchmark\test\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\benchmark\;CMake Files\cmake-build-debug\benchmark\third_party\;CMake Files\cmake-build-debug\benchmark\third_party\googletest\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src/libbenchmark.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src/libbenchmark.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_main">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src/libbenchmark_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark_main"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_main/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src/libbenchmark_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark_main/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="string_util_gtest">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/string_util_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 string_util_gtest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="string_util_gtest/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/string_util_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 string_util_gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="statistics_gtest">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/statistics_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 statistics_gtest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="statistics_gtest/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/statistics_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 statistics_gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_gtest">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/benchmark_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 benchmark_gtest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_gtest/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/benchmark_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 benchmark_gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="complexity_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/complexity_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 complexity_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="complexity_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/complexity_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 complexity_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cxx03_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/cxx03_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 cxx03_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cxx03_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/cxx03_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 cxx03_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="memory_manager_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/memory_manager_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 memory_manager_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="memory_manager_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/memory_manager_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 memory_manager_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="donotoptimize_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/donotoptimize_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 donotoptimize_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="donotoptimize_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/donotoptimize_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 donotoptimize_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fixture_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/fixture_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 fixture_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fixture_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/fixture_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 fixture_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skip_with_error_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/skip_with_error_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 skip_with_error_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skip_with_error_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/skip_with_error_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 skip_with_error_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="options_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/options_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 options_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="options_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/options_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 options_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="diagnostics_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/diagnostics_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 diagnostics_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="diagnostics_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/diagnostics_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 diagnostics_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="basic_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/basic_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 basic_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="basic_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/basic_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 basic_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_main_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/link_main_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 link_main_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_main_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/link_main_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 link_main_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="user_counters_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/user_counters_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 user_counters_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="user_counters_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/user_counters_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 user_counters_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/benchmark_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 benchmark_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/benchmark_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 benchmark_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="map_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/map_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 map_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="map_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/map_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 map_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="display_aggregates_only_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/display_aggregates_only_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 display_aggregates_only_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="display_aggregates_only_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/display_aggregates_only_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 display_aggregates_only_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="register_benchmark_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/register_benchmark_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 register_benchmark_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="register_benchmark_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/register_benchmark_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 register_benchmark_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="multiple_ranges_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/multiple_ranges_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 multiple_ranges_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="multiple_ranges_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/multiple_ranges_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 multiple_ranges_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="commandlineflags_gtest">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/commandlineflags_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 commandlineflags_gtest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="commandlineflags_gtest/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/commandlineflags_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 commandlineflags_gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="args_product_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/args_product_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 args_product_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="args_product_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/args_product_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 args_product_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="report_aggregates_only_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/report_aggregates_only_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 report_aggregates_only_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="report_aggregates_only_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/report_aggregates_only_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 report_aggregates_only_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reporter_output_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/reporter_output_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 reporter_output_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reporter_output_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/reporter_output_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 reporter_output_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="templated_fixture_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/templated_fixture_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 templated_fixture_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="templated_fixture_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/templated_fixture_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 templated_fixture_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_name_gtest">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/benchmark_name_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 benchmark_name_gtest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_name_gtest/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/benchmark_name_gtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 benchmark_name_gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="output_test_helper">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/liboutput_test_helper.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 output_test_helper"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="output_test_helper/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/liboutput_test_helper.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 output_test_helper/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="internal_threading_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/internal_threading_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 internal_threading_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="internal_threading_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/internal_threading_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 internal_threading_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="user_counters_tabular_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/user_counters_tabular_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 user_counters_tabular_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="user_counters_tabular_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/user_counters_tabular_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 user_counters_tabular_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filter_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/filter_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 filter_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filter_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/filter_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 filter_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="user_counters_thousands_test">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/user_counters_thousands_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 user_counters_thousands_test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="user_counters_thousands_test/fast">
+				<Option output="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test/user_counters_thousands_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include"/>
+					<Add directory="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 user_counters_thousands_test/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/matteo/Shared/University/Advanced\ Algorithms\ and\ Parallel\ Programming/Challenge42/1/cmake-build-debug/benchmark/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/include/benchmark/benchmark.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/arraysize.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_api_internal.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_api_internal.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_main.cc">
+			<Option target="benchmark_main"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_name.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_register.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_register.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_runner.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/benchmark_runner.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/check.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/colorprint.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/colorprint.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/commandlineflags.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/commandlineflags.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/complexity.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/complexity.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/console_reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/counter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/counter.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/csv_reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/cycleclock.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/internal_macros.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/json_reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/log.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/mutex.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/re.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/sleep.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/sleep.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/statistics.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/statistics.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/string_util.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/string_util.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/sysinfo.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/thread_manager.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/thread_timer.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/timers.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/timers.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/args_product_test.cc">
+			<Option target="args_product_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/basic_test.cc">
+			<Option target="basic_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/benchmark_gtest.cc">
+			<Option target="benchmark_gtest"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/benchmark_name_gtest.cc">
+			<Option target="benchmark_name_gtest"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/benchmark_test.cc">
+			<Option target="benchmark_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/commandlineflags_gtest.cc">
+			<Option target="commandlineflags_gtest"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/complexity_test.cc">
+			<Option target="complexity_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/cxx03_test.cc">
+			<Option target="cxx03_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/diagnostics_test.cc">
+			<Option target="diagnostics_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/display_aggregates_only_test.cc">
+			<Option target="display_aggregates_only_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/donotoptimize_test.cc">
+			<Option target="donotoptimize_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/filter_test.cc">
+			<Option target="filter_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/fixture_test.cc">
+			<Option target="fixture_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/internal_threading_test.cc">
+			<Option target="internal_threading_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/link_main_test.cc">
+			<Option target="link_main_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/map_test.cc">
+			<Option target="map_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/memory_manager_test.cc">
+			<Option target="memory_manager_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/multiple_ranges_test.cc">
+			<Option target="multiple_ranges_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/options_test.cc">
+			<Option target="options_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/output_test.h">
+			<Option target="complexity_test"/>
+			<Option target="memory_manager_test"/>
+			<Option target="user_counters_test"/>
+			<Option target="display_aggregates_only_test"/>
+			<Option target="report_aggregates_only_test"/>
+			<Option target="reporter_output_test"/>
+			<Option target="templated_fixture_test"/>
+			<Option target="output_test_helper"/>
+			<Option target="internal_threading_test"/>
+			<Option target="user_counters_tabular_test"/>
+			<Option target="user_counters_thousands_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/output_test_helper.cc">
+			<Option target="output_test_helper"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/register_benchmark_test.cc">
+			<Option target="register_benchmark_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/report_aggregates_only_test.cc">
+			<Option target="report_aggregates_only_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/reporter_output_test.cc">
+			<Option target="reporter_output_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/skip_with_error_test.cc">
+			<Option target="skip_with_error_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/statistics_gtest.cc">
+			<Option target="statistics_gtest"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/string_util_gtest.cc">
+			<Option target="string_util_gtest"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/templated_fixture_test.cc">
+			<Option target="templated_fixture_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/user_counters_tabular_test.cc">
+			<Option target="user_counters_tabular_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/user_counters_test.cc">
+			<Option target="user_counters_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/user_counters_thousands_test.cc">
+			<Option target="user_counters_thousands_test"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/cmake/AddCXXCompilerFlag.cmake">
+			<Option virtualFolder="CMake Files\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/cmake/CXXFeatureCheck.cmake">
+			<Option virtualFolder="CMake Files\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/cmake/GetGitVersion.cmake">
+			<Option virtualFolder="CMake Files\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/cmake/GoogleTest.cmake">
+			<Option virtualFolder="CMake Files\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/cmake/GoogleTest.cmake.in">
+			<Option virtualFolder="CMake Files\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/cmake/benchmark.pc.in">
+			<Option virtualFolder="CMake Files\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\src\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\googletest\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\benchmark\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\test\"/>
+		</Unit>
+		<Unit filename="/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest/googletest-paths.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\benchmark\third_party\googletest\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

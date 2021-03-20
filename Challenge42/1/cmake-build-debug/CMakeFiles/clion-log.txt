@@ -1,0 +1,18 @@
+/snap/clion/139/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1"
+-- Failed to find LLVM FileCheck
+-- git Version: v1.5.2-cc9abfc8
+-- Version: 1.5.2
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Looking for Google Test sources
+-- Looking for Google Test sources in /home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest
+-- Found Google Test in /home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/benchmark/googletest
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug/benchmark/third_party/googletest
+[100%] Built target googletest
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/cmake-build-debug

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g   CMakeFiles/COMPLEXITY.dir/strassen.cpp.o  -o COMPLEXITY  benchmark/src/libbenchmark.a -pthread /usr/lib/x86_64-linux-gnu/librt.so 

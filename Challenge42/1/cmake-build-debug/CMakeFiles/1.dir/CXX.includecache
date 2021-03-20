@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/matteo/Shared/University/Advanced Algorithms and Parallel Programming/Challenge42/1/main.cpp
+benchmark/benchmark.h
+-
+iostream
+-
+
